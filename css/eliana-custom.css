@@ -1,0 +1,207 @@
+/* ========================================
+   ELIANA BOOKSHOP CUSTOM STYLES
+   ======================================== */
+
+/* Brand Colors */
+:root {
+    --eliana-red: #E53935;
+    --eliana-deep-blue: #0D47A1;
+    --eliana-light-blue: #42A5F5;
+    --eliana-dark-text: #212121;
+    --eliana-light-bg: #F5F5F5;
+}
+
+/* Primary Color Override */
+.bg-primary,
+.header-bottom.bg-primary {
+    background-color: var(--eliana-deep-blue) !important;
+}
+
+.btn--primary,
+.btn-outlined--primary {
+    background-color: var(--eliana-red) !important;
+    border-color: var(--eliana-red) !important;
+    color: #fff !important;
+}
+
+.btn-outlined--primary:hover {
+    background-color: var(--eliana-deep-blue) !important;
+    border-color: var(--eliana-deep-blue) !important;
+}
+
+/* Text Colors */
+.text-primary,
+a:hover {
+    color: var(--eliana-red) !important;
+}
+
+/* Price Color */
+.price-block .price {
+    color: var(--eliana-red) !important;
+}
+
+/* WhatsApp Button Styles */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25D366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+
+.whatsapp-float i {
+    margin-top: 16px;
+}
+
+/* Logo Text Styling */
+.site-brand-text {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--eliana-deep-blue);
+    text-decoration: none;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: -1px;
+}
+
+.site-brand-text:hover {
+    color: var(--eliana-red);
+}
+
+.site-brand-subtitle {
+    font-size: 12px;
+    color: var(--eliana-red);
+    font-weight: 600;
+    display: block;
+    margin-top: -5px;
+}
+
+/* M-Pesa Payment Instructions */
+.mpesa-instructions {
+    background-color: #f8f9fa;
+    border-left: 4px solid #2ecc71;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.mpesa-instructions h4 {
+    color: #2ecc71;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.mpesa-till-number {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--eliana-red);
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    border: 2px dashed var(--eliana-red);
+}
+
+/* Product Categories Styling */
+.category-badge {
+    background-color: var(--eliana-light-blue);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Banner Text Overlay */
+.banner-cta-overlay {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background: rgba(229, 57, 53, 0.9);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+/* Bulk Orders Section */
+.bulk-orders-banner {
+    background: linear-gradient(135deg, var(--eliana-deep-blue) 0%, var(--eliana-light-blue) 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.bulk-orders-banner h3 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.bulk-orders-banner p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Contact Info Styling */
+.contact-info-block {
+    background-color: var(--eliana-light-bg);
+    padding: 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.contact-info-block i {
+    color: var(--eliana-red);
+    margin-right: 10px;
+}
+
+/* Kenyan Shilling Symbol */
+.price::before {
+    content: "KSh ";
+    font-weight: 600;
+}
+
+/* School Supplies Badge */
+.school-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--eliana-red);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+/* Responsive adjustments for WhatsApp button  */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 25px;
+    }
+}
